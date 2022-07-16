@@ -1,3 +1,7 @@
+<div align="right">
+    <img src="assets/guinsoolab-badge.png" width="60" alt="badge">
+    <br />
+</div>
 <div align="center">
    <img src="assets/mortalmesh.svg" width="120" alt="hurricanedb"/>
    <br/>
