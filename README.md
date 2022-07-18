@@ -11,25 +11,16 @@
 # MortalMesh
 
 MortalMesh is an open-source storage framework that enables building a [Lakehouse architecture](http://cidrdb.org/cidr2021/papers/cidr2021_paper17.pdf) with compute engines including Spark, PrestoDB, Flink, Trino, and Hive and APIs for Scala, Java, Rust, Ruby, and Python. 
-* See the [Delta Lake Documentation](https://docs.delta.io) for details.
-* See the [Quick Start Guide](https://docs.delta.io/latest/quick-start.html) to get started with Scala, Java and Python.
-* Note, this repo is one of many Delta Lake repositories in the [delta.io](https://github.com/delta-io) organizations including 
-[connectors](https://github.com/delta-io/connectors),
-[delta](https://github.com/delta-io/delta), 
-[delta-rs](https://github.com/delta-io/delta-rs),
-[delta-sharing](https://github.com/delta-io/delta-sharing),
-[kafka-delta-ingest](https://github.com/delta-io/kafka-delta-ingest), and
-[website](https://github.com/delta-io/website).
+* See the [MortalMesh Documentation](https://ciusji.gitbook.io/guinsoolab/products/data-storage/mortalmesh) for details.
+* See the [Quick Start Guide](https://ciusji.gitbook.io/guinsoolab/products/data-storage/mortalmesh/quickstart) to get started with Scala, Java and Python.
+* See the [Table Batch Reads & Writes](https://ciusji.gitbook.io/guinsoolab/products/data-storage/mortalmesh/table-batch-reads-and-writes) to reads or writes batch tables.
+* See the [Table Streaming Read & Writes](https://ciusji.gitbook.io/guinsoolab/products/data-storage/mortalmesh/table-streaming-reads-and-writes) to reads or writes streaming tables.
+* See the [Table Deletes, Updates, and Merges](https://ciusji.gitbook.io/guinsoolab/products/data-storage/mortalmesh/table-deletes-updates-and-merges) to operate table with delete, update or merge.
 
 The following are some of the more popular Delta Lake integrations, refer to [delta.io/integrations](https://delta.io/integrations/) for the complete list:
 
-* [Apache Spark™](https://docs.delta.io/): This connector allows Apache Spark™ to read from and write to Delta Lake.
-* [Apache Flink (Preview)](https://github.com/delta-io/connectors/tree/master/flink): This connector allows Apache Flink to write to Delta Lake.
-* [PrestoDB](https://prestodb.io/docs/current/connector/deltalake.html): This connector allows PrestoDB to read from Delta Lake.
-* [Trino](https://trino.io/docs/current/connector/delta-lake.html): This connector allows Trino to read from and write to Delta Lake.
-* [Delta Standalone](https://docs.delta.io/latest/delta-standalone.html): This library allows Scala and Java-based projects (including Apache Flink, Apache Hive, Apache Beam, and PrestoDB) to read from and write to Delta Lake.
-* [Apache Hive](https://docs.delta.io/latest/hive-integration.html): This connector allows Apache Hive to read from Delta Lake.
-* [Delta Rust API](https://docs.rs/deltalake/latest/deltalake/): This library allows Rust (with Python and Ruby bindings) low level access to Delta tables and is intended to be used with data processing frameworks like datafusion, ballista, rust-dataframe, vega, etc.
+* [Apache Spark™](https://ciusji.gitbook.io/guinsoolab/products/data-storage/mortalmesh/connectors/apache-spark): This connector allows Apache Spark™ to read from and write to MortalMesh.
+* [Apache Flink (Preview)](https://ciusji.gitbook.io/guinsoolab/products/data-storage/mortalmesh/connectors/apache-flink): This connector allows Apache Flink to write to MortalMesh.
 
 <br/>
 
@@ -41,7 +32,6 @@ The following are some of the more popular Delta Lake integrations, refer to [de
 * [Compatibility](#compatibility)
   * [API Compatibility](#api-compatibility)
   * [Data Storage Compatibility](#data-storage-compatibility)
-* [Roadmap](#roadmap)
 * [Building](#building)
 * [Transaction Protocol](#transaction-protocol)
 * [Requirements for Underlying Storage Systems](#requirements-for-underlying-storage-systems)
@@ -82,10 +72,6 @@ MortalMesh guarantees backward compatibility for all MortalMesh tables (i.e., ne
 
 Breaking changes in the protocol are indicated by incrementing the minimum reader/writer version in the `Protocol` [action](https://github.com/delta-io/delta/blob/master/core/src/test/scala/org/apache/spark/sql/delta/ActionSerializerSuite.scala).
 
-## Roadmap
-
-* For the high-level Delta Lake roadmap, see [Delta Lake 2022H1 roadmap](http://delta.io/roadmap).  
-* For the detailed timeline, see the [project roadmap](https://github.com/delta-io/delta/milestones). 
 
 ## Transaction Protocol
 
@@ -103,17 +89,17 @@ See the [online documentation on Storage Configuration](https://docs.delta.io/la
 
 ## Concurrency Control
 
-Delta Lake ensures _serializability_ for concurrent reads and writes. Please see [Delta Lake Concurrency Control](https://docs.delta.io/latest/delta-concurrency.html) for more details.
+MortalMesh ensures _serializability_ for concurrent reads and writes. Please see [MortalMesh Concurrency Control](https://docs.delta.io/latest/delta-concurrency.html) for more details.
 
 ## Reporting issues
 
-We use [GitHub Issues](https://github.com/delta-io/delta/issues) to track community reported issues. You can also [contact](#community) the community for getting answers.
+We use [GitHub Issues](https://github.com/GuinsooLab/mortalmesh/issues) to track community reported issues. You can also [contact](#community) the community for getting answers.
 
 ## Contributing 
 
-We welcome contributions to Delta Lake. See our [CONTRIBUTING.md](https://github.com/delta-io/delta/blob/master/CONTRIBUTING.md) for more details.
+We welcome contributions to MortalMesh. See our [CONTRIBUTING.md](https://github.com/delta-io/delta/blob/master/CONTRIBUTING.md) for more details.
 
-We also adhere to the [Delta Lake Code of Conduct](https://github.com/delta-io/delta/blob/master/CODE_OF_CONDUCT.md).
+We also adhere to the [MortalMesh Code of Conduct](https://github.com/delta-io/delta/blob/master/CODE_OF_CONDUCT.md).
 
 ## Building
 
