@@ -1,11 +1,11 @@
 <div align="right">
-    <img src="assets/guinsoolab-badge.png" width="60" alt="badge">
+    <img src="https://raw.githubusercontent.com/GuinsooLab/glab/main/src/images/guinsoolab-badge.png" height="60" alt="badge">
     <br />
 </div>
 <div align="center">
-   <img src="assets/mortalmesh.svg" width="120" alt="hurricanedb"/>
-   <br/>
-   <small>an open-source storage framework that enables building a Lakehouse architecture</small>
+    <img src="https://raw.githubusercontent.com/GuinsooLab/glab/main/src/images/guinsoolab-mortalmesh.svg" alt="logo" height="100" />
+    <br />
+    <br />
 </div>
 
 # MortalMesh
@@ -163,3 +163,6 @@ then follow these steps:
 ## License
 
 Apache License 2.0, see [LICENSE](https://github.com/delta-io/delta/blob/master/LICENSE.txt).
+
+<img src="https://raw.githubusercontent.com/GuinsooLab/glab/main/src/images/guinsoolab-group.svg" width="120" alt="license" />
+
